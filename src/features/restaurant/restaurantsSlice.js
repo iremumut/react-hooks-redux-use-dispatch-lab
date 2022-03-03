@@ -14,6 +14,7 @@ const initialState = {
 export default function restaurantsReducer(state = initialState, action) {
   switch (action.type) {
     case "restaurants/add":
+      console.log(state);
       return {
         ...state,
         restaurants: [...state.restaurants, action.payload],
